@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Anthony Cho</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+<style>
+
+	/*TYPWRITER EFFECT ANIMATION STARTS HERE*/
+
+	@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
+	html {
+	  min-height: 100%;
+	  overflow: hidden;
+	}
+	body {
+	  height: calc(100vh - 8em);
+	  padding: 4em;
+	  color: white;
+	  font-family: Lato, sans-serif;  
+	  background-color: black; 
+	  overflow-y: hidden;
+	  overflow-x: hidden;
+	}
+	.line-1 {
+	    position: relative;
+	    top: 50%;  
+	    width: 24em;
+	    margin: 0 auto;
+	    border-right: 2px solid rgba(255,255,255,.75);
+	    font-size: 180%;
+	    text-align: center;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    transform: translateY(-50%);    
+	}
+
+	.delay {
+		wait: 10.0s;
+	}
+
+	/* Animates Words */
+	.anim-typewriter{
+	  animation: typewriter 4s steps(44) 1s 1 normal both,
+	             blinkTextCursor 500ms steps(44) infinite normal;
+	}
+	@keyframes typewriter{
+	  from{width: 0;}
+	  to{width: 37em;}
+	}
+	@keyframes blinkTextCursor{
+	  from{border-right-color: rgba(255,255,255,.75);}
+	  to{border-right-color: transparent;}
+	}
+
+	/*NAVIGATION BAR*/
+	.navbar {
+		font-family: 'Fira-Mono', monospace;
+		margin-top: 0;
+		background-color: #000000;
+		border: 0;
+		font-size: 12px !important;
+		letter-spacing: 3px;
+		opacity: 0.5;
+		color: white;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: transparent;
+	}
+
+	/*MAIN ELEMENTS*/
+	body {
+		font: 400 8px 'Fira-Mono', monospace;
+		color: white;
+	}
+	p {
+		font: 'Fira-Mono', monospace;
+		font-size: 12px;
+		color:white;
+		letter-spacing: 2px;
+	}
+	em { 
+		font: 'Fira-Mono', monospace;
+		font-size: 11px;
+		color: grey;
+		font-style: italic;
+		letter-spacing: 2px;
+	}
+	h3, h4 {
+		font-size: 20px;
+		color: white;
+		letter-spacing: 5px;
+	}
+	.container {
+		padding: 20px 20px;
+	}
+
+	}
+	.makeblack {
+		background-color: black !important;
+	}
+	.initial_container {
+		padding: 350px 200px;
+	}
+	</style>
+
+</head>
+
+<body class="makeblack" id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="collapse navbar-collapse" id="theNavbar">
+		<u1 class="nav navbar-nav navbar-left">
+			<li><a href="#home">HOME</a></li>
+        	<li><a href="#about_me">ABOUT</a></li>
+        	<li><a href="#projects">PROJECTS</a></li>
+        	<li><a href="#contact">CONTACT</a></li>
+        	<li class="dropdown">
+         		<a class="dropdown-toggle" data-toggle="dropdown">MORE
+          		<span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+           			<li><a href="https://www.youtube.com/playlist?list=PLmDh-0r6HcGpUT4d2_WUMlS4Qx6jw_X6N">Presentations</a></li>
+            		<li><a href="#">Resume</a></li>
+            		<li><a href="https://github.com/foerever">Github</a></li> 
+            		<li><a href="https://www.linkedin.com/in/sung-soo-anthony-cho-5b4606129">LinkedIn</a></li>
+          		</ul>
+        	</li>
+        </u1>
+    </div>
+</nav>
+
+
+<div class="initial_container">
+<p class = "line-1 anim-typewriter">Hey! I'm Anthony and I'm a developer! Check me out! </p>
+</div>
+
+<!-- About Me Section -->
+
+<div id = "about_me" class="initial_container text-center">
+	<h3> Anthony Cho</h3>
+	<p><em>Rice University Computer Science Major</em></p>
+	<p>I was born in Pohang, South Korea but have lived in Houston, TX for the majority of my life. I like to rope cattle and grown curn. That was a lie but I actually like to garden. I also like to breakdance. Most importantly I like to make cool shit I'm a programmer ya feel?</p>
+	<p>Learn More About Me!</p>
+	<br>
+	  <div class="row">
+	    <div class="col-sm-4">
+	      <p class="text-center"><strong>Leadership</strong></p><br>
+	      <a href="#demo" data-toggle="collapse">
+	        <img src="http://i.imgur.com/h8UD9wR.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+	      </a>
+	      <div id="demo" class="collapse">
+	        <p>Freshman Representative Rice University CS Club</p>
+	        <p>Director of Houston Food Bank Student Heroes</p>
+	        <p>President of Clear Lake High School Earth Club</p>
+	        <p>Secretary of National Technical Honor Society</p>
+	        <p>Vice President of Clear Lake High School Food Bank Club</p>
+	      </div>
+	    </div>
+	    <div class="col-sm-4">
+	      <p class="text-center"><strong>Internship</strong></p><br>
+	      <a href="#demo2" data-toggle="collapse">
+	        <img src="http://i.imgur.com/prSF9yx.jpg" class="img-circle person" alt="ship_one" width="255" height="255">
+	      </a>
+	      <div id="demo2" class="collapse">
+	        <p>UT Center for Space Research (NASA Grant)</p>
+	        <p>CSR Final Presentation<a href="http://www.w3schools.com" data-toggle="ship_two" title="Visit w3schools">watch here</a></p></div>
+	    </div>
+	    <div class="col-sm-4">
+	      <p class="text-center"><strong>Entrepreneurship</strong></p><br>
+	      <a href="#demo3" data-toggle="collapse">
+	        <img src="http://i.imgur.com/OJKkkeZ.jpg" class="img-circle person" alt="ship_three" width="255" height="255">
+	      </a>
+	      <div id="demo3" class="collapse">
+	        <p>$10,000 LILIE New Entrepreneurs Grant</p>
+	        <p>3rd Place Rice Elevator Pitch Competition</p>
+	        <p>3 Day Start Up Participant</p>
+	      </div>
+	    </div>
+	  </div>
+</div> 
+
+
+
+<!-- Project Section -->
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
