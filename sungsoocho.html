@@ -17,16 +17,13 @@
 	@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
 	html {
 	  min-height: 100%;
-	  overflow: hidden;
 	}
 	body {
 	  height: calc(100vh - 8em);
 	  padding: 4em;
 	  color: white;
 	  font-family: Lato, sans-serif;  
-	  background-color: black; 
-	  overflow-y: hidden;
-	  overflow-x: hidden;
+	  background-color: black;
 	}
 	.line-1 {
 	    position: relative;
@@ -37,8 +34,8 @@
 	    font-size: 180%;
 	    text-align: center;
 	    white-space: nowrap;
-	    overflow: hidden;
-	    transform: translateY(-50%);    
+	    overflow: hidden;	    
+		transform: translateY(-50%);    
 	}
 
 	.delay {
@@ -106,8 +103,41 @@
 		background-color: black !important;
 	}
 	.initial_container {
-		padding: 350px 200px;
+		padding: 400px 300px 400px 300px
 	}
+	.about_me_container {
+		padding: 80px 300px 380px 300px;
+	}
+	.person {
+     	border: 10px solid transparent;
+     	margin-bottom: 25px;
+     	width: 80%;
+     	height: 80%;
+     	opacity: 0.7;
+  	}
+  	.person:hover {
+		border-color: #f1f1f1;
+	}	
+/*  	.make_circle {
+    	border-radius: 100px;
+    	max-height: 500px;
+    	max-width: 500px;
+  	}*/
+
+	.make_circle{
+		width: 200px;
+		height: 200px;
+/*		background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');
+*/		background-size: cover;
+		display: inline-block;
+		border-radius: 200px;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+	}
+
+  	.test_border:hover {
+  		border-color: red;
+  	}
 	</style>
 
 </head>
@@ -126,7 +156,7 @@
           		<span class="caret"></span></a>
           		<ul class="dropdown-menu">
            			<li><a href="https://www.youtube.com/playlist?list=PLmDh-0r6HcGpUT4d2_WUMlS4Qx6jw_X6N">Presentations</a></li>
-            		<li><a href="#">Resume</a></li>
+            		<li><a href="anthony_cho/resources/sung_soo_cho_resume.pdf">Resume</a></li>
             		<li><a href="https://github.com/foerever">Github</a></li> 
             		<li><a href="https://www.linkedin.com/in/sung-soo-anthony-cho-5b4606129">LinkedIn</a></li>
           		</ul>
@@ -142,7 +172,7 @@
 
 <!-- About Me Section -->
 
-<div id = "about_me" class="initial_container text-center">
+<div id = "about_me" class="about_me_container text-center">
 	<h3> Anthony Cho</h3>
 	<p><em>Rice University Computer Science Major</em></p>
 	<p>I was born in Pohang, South Korea but have lived in Houston, TX for the majority of my life. I like to rope cattle and grown curn. That was a lie but I actually like to garden. I also like to breakdance. Most importantly I like to make cool shit I'm a programmer ya feel?</p>
@@ -152,7 +182,7 @@
 	    <div class="col-sm-4">
 	      <p class="text-center"><strong>Leadership</strong></p><br>
 	      <a href="#demo" data-toggle="collapse">
-	        <img src="http://i.imgur.com/h8UD9wR.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+	        <img src="http://i.imgur.com/h8UD9wR.jpg" class="img-circle person make_circle" alt="Random Name" width="255" height="255">
 	      </a>
 	      <div id="demo" class="collapse">
 	        <p>Freshman Representative Rice University CS Club</p>
@@ -165,16 +195,16 @@
 	    <div class="col-sm-4">
 	      <p class="text-center"><strong>Internship</strong></p><br>
 	      <a href="#demo2" data-toggle="collapse">
-	        <img src="http://i.imgur.com/prSF9yx.jpg" class="img-circle person" alt="ship_one" width="255" height="255">
+	        <img src="http://i.imgur.com/prSF9yx.jpg" class="img-circle person make_circle" alt="ship_one" width="255" height="255">
 	      </a>
 	      <div id="demo2" class="collapse">
 	        <p>UT Center for Space Research (NASA Grant)</p>
-	        <p>CSR Final Presentation<a href="http://www.w3schools.com" data-toggle="ship_two" title="Visit w3schools">watch here</a></p></div>
+	        <p>CSR Final Presentation</p></div>
 	    </div>
 	    <div class="col-sm-4">
 	      <p class="text-center"><strong>Entrepreneurship</strong></p><br>
 	      <a href="#demo3" data-toggle="collapse">
-	        <img src="http://i.imgur.com/OJKkkeZ.jpg" class="img-circle person" alt="ship_three" width="255" height="255">
+	        <img src="http://i.imgur.com/OJKkkeZ.jpg" class="img-circle person make_circle" alt="ship_three" width="255" height="255">
 	      </a>
 	      <div id="demo3" class="collapse">
 	        <p>$10,000 LILIE New Entrepreneurs Grant</p>
@@ -188,6 +218,20 @@
 
 
 <!-- Project Section -->
+
+<div id="projects" class="bg-1">
+  <div class="container">
+    <h3 class="text-center"> Projects </h3>
+    <a href="http://i.imgur.com/usXJ6mF.png">
+      <img src="http://i.imgur.com/usXJ6mF.png" class="make_circle person project_thumbnail" alt="test_project_1">
+    </a>
+    <a href="http://i.imgur.com/Ubw3nTQ.png">
+      <img src="http://i.imgur.com/lhodMfM.png" class="make_circle person project_thumbnail" alt="test_project_2">
+    </a>
+    <a href="http://i.imgur.com/vix2GGV.png">
+      <img src="http://i.imgur.com/vix2GGV.png" class="make_circle person project_thumbnail" alt="test_project_3">
+    </a>
+</div>
 
 <script>
 $(document).ready(function(){
