@@ -24,6 +24,7 @@
 	  color: white;
 	  font-family: Lato, sans-serif;  
 	  background-color: black;
+	  overflow-x: hidden;
 	}
 	.line-1 {
 	    position: relative;
@@ -98,7 +99,6 @@
 		padding: 20px 20px;
 	}
 
-	}
 	.makeblack {
 		background-color: black !important;
 	}
@@ -107,6 +107,9 @@
 	}
 	.about_me_container {
 		padding: 80px 300px 380px 300px;
+	}
+	.project_container {
+		padding: 80px 300px 500px 300px;
 	}
 	.person {
      	border: 10px solid transparent;
@@ -118,21 +121,24 @@
   	.person:hover {
 		border-color: #f1f1f1;
 	}	
-/*  	.make_circle {
-    	border-radius: 100px;
-    	max-height: 500px;
-    	max-width: 500px;
-  	}*/
 
 	.make_circle{
 		width: 200px;
 		height: 200px;
-/*		background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');
-*/		background-size: cover;
+		background-size: cover;
 		display: inline-block;
 		border-radius: 200px;
 		-webkit-border-radius: 100px;
 		-moz-border-radius: 100px;
+	}
+
+	.make_circle_smaller{
+		width: 200px;
+		height: 200px;
+		background-size: cover;
+		display: inline-block;
+		border-radius: 200px;
+		-webkit-border-radius
 	}
 
   	.test_border:hover {
@@ -215,51 +221,68 @@
 	  </div>
 </div> 
 
-
-
 <!-- Project Section -->
 
-<div id="projects" class="bg-1">
+<div id="projects" class="project_container">
   <div class="container">
     <h3 class="text-center"> Projects </h3>
     <a href="http://i.imgur.com/usXJ6mF.png">
-      <img src="http://i.imgur.com/usXJ6mF.png" class="make_circle person project_thumbnail" alt="test_project_1">
+      <img src="http://i.imgur.com/usXJ6mF.png" class="make_circle person project_thumbnail" alt="Owl_Security">
     </a>
     <a href="http://i.imgur.com/Ubw3nTQ.png">
-      <img src="http://i.imgur.com/lhodMfM.png" class="make_circle person project_thumbnail" alt="test_project_2">
+      <img src="http://i.imgur.com/oUcrdIM.png" class="make_circle person project_thumbnail" alt="Sandals">
     </a>
     <a href="http://i.imgur.com/vix2GGV.png">
-      <img src="http://i.imgur.com/vix2GGV.png" class="make_circle person project_thumbnail" alt="test_project_3">
+      <img src="http://i.imgur.com/vix2GGV.png" class="make_circle person project_thumbnail" alt="Abot">
     </a>
 </div>
 
+<!-- Contact Section -->
+
+<div id="contact" class="container-fluid">
+  <h3 class="text-center">Contact</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <p>Talk to me!!!</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Houston, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> (c) 713-828-8185</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> Anthony.Cho@rice.edu</p>
+    </div>
+    <form action="contact.php" method = "post" class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <input type="submit" value="Send">
+        </div>
+      </div>
+    </form>>
+  </div>
+</div>
+
+<!-- Script for Page Scroll -->
+
 <script>
 $(document).ready(function(){
-  // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip(); 
-  
-  // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-
-      // Prevent default anchor click behavior
       event.preventDefault();
-
-      // Store hash
       var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+           window.location.hash = hash;
       });
-    } // End if
+    } 
   });
 })
 </script>
