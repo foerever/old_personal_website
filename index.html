@@ -10,6 +10,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
 <style>
 
 	/*TYPWRITER EFFECT ANIMATION STARTS HERE*/
@@ -29,7 +30,7 @@
 	.line-1 {
 	    position: relative;
 	    top: 50%;  
-	    width: 24em;
+	    width: 30px;
 	    margin: 0 auto;
 	    border-right: 2px solid rgba(255,255,255,.75);
 	    font-size: 180%;
@@ -50,7 +51,7 @@
 	}
 	@keyframes typewriter{
 	  from{width: 0;}
-	  to{width: 37em;}
+	  to{width: 33em;}
 	}
 	@keyframes blinkTextCursor{
 	  from{border-right-color: rgba(255,255,255,.75);}
@@ -73,44 +74,50 @@
 	}
 
 	/*MAIN ELEMENTS*/
-	body {
-		font: 400 8px 'Fira-Mono', monospace;
-		color: white;
-	}
 	p {
 		font: 'Fira-Mono', monospace;
-		font-size: 12px;
+		font-size: 20px !important;
 		color:white;
 		letter-spacing: 2px;
 	}
 	em { 
-		font: 'Fira-Mono', monospace;
-		font-size: 11px;
+		font-size: 16px; 
 		color: grey;
-		font-style: italic;
-		letter-spacing: 2px;
 	}
 	h3, h4 {
-		font-size: 20px;
+		font-size: 30px;
 		color: white;
 		letter-spacing: 5px;
 	}
-	.container {
-		padding: 20px 20px;
-	}
 
-	.makeblack {
-		background-color: black !important;
-	}
-	.initial_container {
-		padding: 400px 300px 400px 300px
-	}
+	/*CONTAINERS*/
+
+  	.initial_container {
+  		background-image: 
+    	linear-gradient(
+	    rgba(0, 0, 0, 0.5),
+	    rgba(0, 0, 0, 0.5)),
+    	url(http://i.imgur.com/prSF9yx.jpg);
+    	background-size: cover;
+    	position: absolute;
+    	width:100%;
+    	height:100%;
+    	top:0px;
+    	left:0px;
+    	z-index:1000;
+    	padding: 300px 400px 300px 400px;
+  	}
+  	.space_container {
+  		padding: 450px 300px 400px 300px;
+  	}
 	.about_me_container {
 		padding: 80px 300px 380px 300px;
 	}
 	.project_container {
 		padding: 80px 300px 500px 300px;
 	}
+
+	/*EDITS*/
 	.person {
      	border: 10px solid transparent;
      	margin-bottom: 25px;
@@ -144,11 +151,24 @@
   	.test_border:hover {
   		border-color: red;
   	}
+  	.nicer_text {
+  		font-family: 'Cormorant Garamond', serif; 
+  	}
+  	.nicer_text h3 {
+  		font-size: 40px;
+  	}
+  	.nicer_text p {
+  		font-size: 20px !important;
+  	}
+  	.description_text {
+  		font-size: 12px !important
+  	}
+
 	</style>
 
 </head>
 
-<body class="makeblack" id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="collapse navbar-collapse" id="theNavbar">
@@ -173,60 +193,30 @@
 
 
 <div class="initial_container">
-<p class = "line-1 anim-typewriter">Hey! I'm Anthony and I'm a developer! Check me out! </p>
+<p class = "line-1 anim-typewriter">Hello world! I'm Anthony and I'm a developer! Check me out! </p>
+</div>
+
+<div class="space_container">
 </div>
 
 <!-- About Me Section -->
-
-<div id = "about_me" class="about_me_container text-center">
+<div id="about_me" class="about_me_container text-center nicer_text">
 	<h3> Anthony Cho</h3>
 	<p><em>Rice University Computer Science Major</em></p>
-	<p>I was born in Pohang, South Korea but have lived in Houston, TX for the majority of my life. I like to rope cattle and grown curn. That was a lie but I actually like to garden. I also like to breakdance. Most importantly I like to make cool shit I'm a programmer ya feel?</p>
+	<p>I was born in small city in South Korea called Pohang. However, I was raised in Houston, TX where I've pursued a variety of interests ranging from gardening to breakdancing. My greatest interest, however, has always been in creating. I have developed CAD designs, a satellite callibration program, android applications, websites, circuits, robots, and the like.</p>
+
+	<p>I'm also passionate about entrepreneurship. I've won $10,000 from the LILIE New Entrepreneurs Grant and $1000 from Rice's Annual Undergraduate Elevator Pitch Competition for my designs/ideas. I'm very involved in the Rice entrepreneurship community and am always looking to participate in events such as the Houston 3 Day Start Up.</p>
+
+	<p>I like to create products with a strong value proposition but I also recognize the value of creating for the betterment of society as a whole. I believe that developers have a powerful ability to impact this world in an increasing number of diverse and positive ways. In high school I held multiple officer positions, such as President of Earth Club, for service organizations. Additionally, I was director of the Student Heroes Program where I oversaw hundreds of student representatives from several dozen different high schools around Houston at the largest food bank in the nation as a part of a volunteer leadership program. As director I also founded the Board of Liaisons which pushed for initiatives such as Students End Hunger: an event that ran food drives in over three dozen schools. </p>
 	<p>Learn More About Me!</p>
-	<br>
-	  <div class="row">
-	    <div class="col-sm-4">
-	      <p class="text-center"><strong>Leadership</strong></p><br>
-	      <a href="#demo" data-toggle="collapse">
-	        <img src="http://i.imgur.com/h8UD9wR.jpg" class="img-circle person make_circle" alt="Random Name" width="255" height="255">
-	      </a>
-	      <div id="demo" class="collapse">
-	        <p>Freshman Representative Rice University CS Club</p>
-	        <p>Director of Houston Food Bank Student Heroes</p>
-	        <p>President of Clear Lake High School Earth Club</p>
-	        <p>Secretary of National Technical Honor Society</p>
-	        <p>Vice President of Clear Lake High School Food Bank Club</p>
-	      </div>
-	    </div>
-	    <div class="col-sm-4">
-	      <p class="text-center"><strong>Internship</strong></p><br>
-	      <a href="#demo2" data-toggle="collapse">
-	        <img src="http://i.imgur.com/prSF9yx.jpg" class="img-circle person make_circle" alt="ship_one" width="255" height="255">
-	      </a>
-	      <div id="demo2" class="collapse">
-	        <p>UT Center for Space Research (NASA Grant)</p>
-	        <p>CSR Final Presentation</p></div>
-	    </div>
-	    <div class="col-sm-4">
-	      <p class="text-center"><strong>Entrepreneurship</strong></p><br>
-	      <a href="#demo3" data-toggle="collapse">
-	        <img src="http://i.imgur.com/OJKkkeZ.jpg" class="img-circle person make_circle" alt="ship_three" width="255" height="255">
-	      </a>
-	      <div id="demo3" class="collapse">
-	        <p>$10,000 LILIE New Entrepreneurs Grant</p>
-	        <p>3rd Place Rice Elevator Pitch Competition</p>
-	        <p>3 Day Start Up Participant</p>
-	      </div>
-	    </div>
-	  </div>
-</div> 
+	</div>
+
 
 <!-- Project Section -->
 
 <div id="projects" class="project_container">
-  <div class="container">
     <h3 class="text-center"> Projects </h3>
-    <a href="https://github.com/foerever/OwlSecurity">
+<!--     <a href="https://github.com/foerever/OwlSecurity">
       <img src="http://i.imgur.com/usXJ6mF.png" class="make_circle person project_thumbnail" alt="Owl_Security">
     </a>
     <a href="https://github.com/foerever/Sandals">
@@ -234,12 +224,54 @@
     </a>
     <a href="http://i.imgur.com/vix2GGV.png">
       <img src="http://i.imgur.com/vix2GGV.png" class="make_circle person project_thumbnail" alt="Abot">
-    </a>
-</div>
+    </a> -->
+	<br>
+	  <div class="row">
+
+	  	<!-- Owl Security -->
+	    <div class="col-sm-4">
+	      <p class="text-center"><strong>Owl Security</strong></p><br>
+	      <a href="#sawano" data-toggle="collapse">
+	        <img src="http://i.imgur.com/usXJ6mF.png" class="img-circle person make_circle" alt="Random Name" width="255" height="255">
+	      </a>
+	      <div id="sawano" class="collapse">
+	        <p class="description_text">An APK that uses API integration of Google Cloud Vision and IBM Watson to detect security threats and work to resolve them independently. When a threat is detected in a set number of frames an sms is sent to emergency services with a picture and description of the threat/hazard.</p>
+	        <p>Winner of IBM Watson Challenge at UH CodeRed Hackathon</p>
+	        <p><a href="http://imgur.com/a/DtNVm">Screenshots</a></p>
+	        <p><a href="https://github.com/foerever/OwlSecurity">Check out the git</a></p>
+	      </div>
+	    </div>
+
+	    <!-- CSR NASA INTERNSHIP -->
+	    <div class="col-sm-4">
+	      <p class="text-center"><strong>CSR Internship</strong></p><br>
+	      <a href="#internship" data-toggle="collapse">
+	        <img src="http://i.imgur.com/h8UD9wR.jpg" class="img-circle person make_circle" alt="ship_one" width="255" height="255">
+	      </a>
+	      <div id="internship" class="collapse">
+	        <p class="description_text">Paid Internship at UT Center for Space Research (NASA Grant). Created callibration program for ICESat 2 (NASA satellite) by analysizing speculative reflection of ICESAT 1 </p>
+	        <p><a href="https://www.youtube.com/watch?v=WLuKhVef9gA&list=PLmDh-0r6HcGpUT4d2_WUMlS4Qx6jw_X6N&index=4&t=1s">CSR Final Presentation</a></p>
+	       </div>
+	    </div>
+
+	    <!-- PLUTO/LPI RESEARCH -->
+	    <div class="col-sm-4">
+	      <p class="text-center"><strong>Pluto Research</strong></p><br>
+	      <a href="#research" data-toggle="collapse">
+	        <img src="http://i.imgur.com/OJKkkeZ.jpg" class="img-circle person make_circle" alt="ship_three" width="255" height="255">
+	      </a>
+	      <div id="research" class="collapse">
+	        <p class="description_text">Research done under the guidance of Dr. Stephen Mackwell, Director of the Lunar and Planetary Institute on Pluto's Tombaugh Regio. Read the research paper for my full analysis.</p>
+	       	<p><a href="resources/pluto_research.pdf">Research Paper</a></p>
+	        <p><a href="https://www.youtube.com/watch?v=yAk5NWFyCG4&index=5&list=PLmDh-0r6HcGpUT4d2_WUMlS4Qx6jw_X6N"> Watch the final presentation here</p>
+	      </div>
+	    </div>
+	  </div>
+</div> 
 
 <!-- Contact Section -->
 
-<div id="contact" class="container-fluid">
+<!-- <div id="contact" class="container-fluid">
   <h3 class="text-center">Contact</h3>
   <div class="row">
     <div class="col-md-4">
@@ -266,7 +298,15 @@
       </div>
     </form>>
   </div>
-</div>
+</div> -->
+
+<div id="contact" class="container-fluid">
+<h3 class="text-center"> Contact </h3>
+<div class="row text-center">
+	<p><span class="glyphicon glyphicon-map-marker"></span> Houston, TX </p>
+	<p><span class="glyphicon glyphicon-phone"></span> (c) 713-828-8185 </p>
+	<p><span class="glyphicon glyphicon-envelope"></span> Anthony.Cho@rice.edu<p>
+</p>
 
 <!-- Script for Page Scroll -->
 
