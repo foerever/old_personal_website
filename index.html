@@ -37,7 +37,7 @@
 	    text-align: center;
 	    white-space: nowrap;
 	    overflow: hidden;	    
-		transform: translateY(-50%);    
+		transform: translateY(-50%);  
 	}
 
 	.delay {
@@ -51,7 +51,7 @@
 	}
 	@keyframes typewriter{
 	  from{width: 0;}
-	  to{width: 33em;}
+	  to{width: 25em;}
 	}
 	@keyframes blinkTextCursor{
 	  from{border-right-color: rgba(255,255,255,.75);}
@@ -97,15 +97,15 @@
     	linear-gradient(
 	    rgba(0, 0, 0, 0.5),
 	    rgba(0, 0, 0, 0.5)),
-    	url(http://i.imgur.com/prSF9yx.jpg);
-    	background-size: cover;
+		url(http://i.imgur.com/kf3hF3P.jpg);
+		background-size: cover;
     	position: absolute;
     	width:100%;
     	height:100%;
     	top:0px;
     	left:0px;
     	z-index:1000;
-    	padding: 300px 400px 300px 400px;
+    	padding: 400px 200px 300px 800px;
   	}
   	.space_container {
   		padding: 450px 300px 400px 300px;
@@ -163,7 +163,9 @@
   	.description_text {
   		font-size: 12px !important
   	}
-
+  	.top_div {
+  		padding-bottom: 200px
+  	}
 	</style>
 
 </head>
@@ -193,7 +195,10 @@
 
 
 <div class="initial_container">
-<p class = "line-1 anim-typewriter">Hello world! I'm Anthony and I'm a developer! Check me out! </p>
+<div class="left_container"></div>
+<div class="right-container">
+<p class = "line-1 anim-typewriter">Hello world! I'm Anthony and I'm a developer!</p>
+</div>
 </div>
 
 <div class="space_container">
@@ -237,13 +242,14 @@
 	    <div class="col-sm-4 col-xs-4 col-md-4">
 	      <p class="text-center"><strong>CSR Internship</strong></p><br>
 	      <a href="#internship" data-toggle="collapse">
-	        <img src="http://i.imgur.com/h8UD9wR.jpg" class="img-circle person make_circle" alt="ship_one" width="255" height="255">
+	        <img src="http://i.imgur.com/rePkXMM.png" class="img-circle person make_circle" alt="ship_one" width="255" height="255">
 	      </a>
 	      <div id="internship" class="collapse">
 	        <p class="description_text">Paid Internship at UT Center for Space Research (NASA Grant). Created callibration program for ICESat 2 (NASA satellite) by analysizing speculative reflection of ICESAT 1 </p>
 	        <p><a href="https://www.youtube.com/watch?v=WLuKhVef9gA&list=PLmDh-0r6HcGpUT4d2_WUMlS4Qx6jw_X6N&index=4&t=1s">CSR Final Presentation</a></p>
 	       </div>
-	    </div>
+	</div>
+	<div class="row">
 
 	    <!-- PLUTO/LPI RESEARCH -->
 	    <div class="col-sm-4 col-xs-4 col-md-4">
@@ -254,8 +260,10 @@
 	      <div id="research" class="collapse">
 	        <p class="description_text">Research done under the guidance of Dr. Stephen Mackwell, Director of the Lunar and Planetary Institute on Pluto's Tombaugh Regio. Read the research paper for my full analysis.</p>
 	       	<p><a href="resources/pluto_research.pdf">Research Paper</a></p>
-	        <p><a href="https://www.youtube.com/watch?v=yAk5NWFyCG4&index=5&list=PLmDh-0r6HcGpUT4d2_WUMlS4Qx6jw_X6N"> Watch the final presentation here</p>
+	        <p><a href="https://www.youtube.com/watch?v=yAk5NWFyCG4&index=5&list=PLmDh-0r6HcGpUT4d2_WUMlS4Qx6jw_X6N"> Watch the final presentation here </a></p>
 	      </div>
+	    </div>
+
 	    </div>
 
 	    <!-- Sandals --> 
@@ -295,12 +303,14 @@
 	        <p><a href="https://devpost.com/software/defbeats">Check out the devpost</a></p>
 	      </div>
 	    </div>
+	</div>
 	    <!-- CLOSES --> 
 
 	  </div>
 </div> 
 
 <!-- Contact Section -->
+<!-- github only hosts static pages so php doesn't work -->
 
 <!-- <div id="contact" class="container-fluid">
   <h3 class="text-center">Contact</h3>
