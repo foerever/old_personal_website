@@ -11,163 +11,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
-<style>
-
-	/*TYPWRITER EFFECT ANIMATION STARTS HERE*/
-
-	@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
-	html {
-	  min-height: 100%;
-	}
-	body {
-	  height: calc(100vh - 8em);
-	  padding: 4em;
-	  color: white;
-	  font-family: Lato, sans-serif;  
-	  background-color:black ;
-	  overflow-x: hidden;
-	}
-	.line-1 {
-	    position: relative;
-	    top: 50%;  
-	    width: 30px;
-	    margin: 0 auto;
-	    border-right: 2px solid rgba(255,255,255,.75);
-	    font-size: 180%;
-	    text-align: center;
-	    white-space: nowrap;
-	    overflow: hidden;	    
-		transform: translateY(-50%);  
-	}
-
-	.delay {
-		wait: 10.0s;
-	}
-
-	/* Animates Words */
-	.anim-typewriter{
-	  animation: typewriter 4s steps(44) 1s 1 normal both,
-	             blinkTextCursor 500ms steps(44) infinite normal;
-	}
-	@keyframes typewriter{
-	  from{width: 0;}
-	  to{width: 25em;}
-	}
-	@keyframes blinkTextCursor{
-	  from{border-right-color: rgba(255,255,255,.75);}
-	  to{border-right-color: transparent;}
-	}
-
-	/*NAVIGATION BAR*/
-	.navbar {
-		font-family: 'Fira-Mono', monospace;
-		margin-top: 0;
-		background-color: #000000;
-		border: 0;
-		font-size: 12px !important;
-		letter-spacing: 3px;
-		opacity: 0.5;
-		color: white;
-	}
-	.navbar-default .navbar-toggle {
-		border-color: transparent;
-	}
-
-	/*MAIN ELEMENTS*/
-	p {
-		font: 'Fira-Mono', monospace;
-		font-size: 20px !important;
-		color:white;
-		letter-spacing: 2px;
-	}
-	em { 
-		font-size: 16px; 
-		color: grey;
-	}
-	h3, h4 {
-		font-size: 30px;
-		color: white;
-		letter-spacing: 5px;
-	}
-
-	/*CONTAINERS*/
-
-  	.initial_container {
-  		background-image: 
-    	linear-gradient(
-	    rgba(0, 0, 0, 0.5),
-	    rgba(0, 0, 0, 0.5)),
-		url(http://i.imgur.com/TF0DtrZ.jpg);
-		background-size: cover;
-    	position: absolute;
-    	width:100%;
-    	height:100%;
-    	top:0px;
-    	left:0px;
-    	z-index:1000;
-    	padding: 500px 200px 400px 800px;
-  	}
-  	.space_container {
-  		padding: 450px 300px 400px 300px;
-  	}
-	.about_me_container {
-		padding: 80px 300px 380px 300px;
-	}
-	.project_container {
-		padding: 80px 300px 500px 300px;
-	}
-
-	/*EDITS*/
-	.person {
-     	border: 10px solid transparent;
-     	margin-bottom: 25px;
-     	width: 80%;
-     	height: 80%;
-     	opacity: 0.7;
-  	}
-  	.person:hover {
-		border-color: #f1f1f1;
-	}	
-
-	.make_circle{
-		width: 200px;
-		height: 200px;
-		background-size: cover;
-		display: inline-block;
-		border-radius: 200px;
-		-webkit-border-radius: 100px;
-		-moz-border-radius: 100px;
-	}
-
-	.make_circle_smaller{
-		width: 200px;
-		height: 200px;
-		background-size: cover;
-		display: inline-block;
-		border-radius: 200px;
-		-webkit-border-radius
-	}
-
-  	.test_border:hover {
-  		border-color: red;
-  	}
-  	.nicer_text {
-  		font-family: 'Cormorant Garamond', serif; 
-  	}
-  	.nicer_text h3 {
-  		font-size: 40px;
-  	}
-  	.nicer_text p {
-  		font-size: 24px !important;
-  	}
-  	.description_text {
-  		font-size: 12px !important
-  	}
-  	.top_div {
-  		padding-bottom: 200px
-  	}
-	</style>
-
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -198,6 +42,7 @@
 <div class="left_container"></div>
 <div class="right-container">
 <p class = "line-1 anim-typewriter">Hello world! I'm Anthony and I'm a developer!</p>
+<p>New Website Coming Soon! Please forgive this ratchet version!</p>
 </div>
 </div>
 
@@ -208,11 +53,11 @@
 <div id="about_me" class="about_me_container text-center nicer_text">
 	<h3> Anthony Cho</h3>
 	<p><em>Rice University Computer Science Major</em></p>
-	<p>I was born in small city in South Korea called Pohang. However, I was raised in Houston, TX where I've pursued a variety of interests ranging from gardening to breakdancing. My greatest interest, however, has always been in creating. I have developed CAD designs, a satellite callibration program, android applications, websites, circuits, robots, and the like.</p>
+	<p>I was born in small city in South Korea called Pohang. However, I was raised in Houston, TX where I've pursued a variety of interests ranging from gardening to breakdancing. My greatest interest, however, has always been in creating. I have developed CAD designs, circuits, android applications, websites, robots, and the like. I have experience working as an intern with a NASA grant to build satellite callibration programs, with ParkIT to improve their Machine Learning/Computer Vision technology, and with Sensorfield to build a website for data processing and display.</p>
 
 	<p>I'm also passionate about entrepreneurship. I've won $10,000 from the LILIE New Entrepreneurs Grant and $1000 from Rice's Annual Undergraduate Elevator Pitch Competition for my designs/ideas. I'm very involved in the Rice entrepreneurship community and am always looking to participate in events such as the Houston 3 Day Start Up.</p>
 
-	<p>I like to create products with a strong value proposition but I also recognize the value of creating for the betterment of society as a whole. I believe that developers have a powerful ability to impact this world in an increasing number of diverse and positive ways. In high school I held multiple officer positions, such as President of Earth Club, for service organizations. Additionally, I was director of the Student Heroes Program where I oversaw hundreds of student representatives from several dozen different high schools around Houston at the largest food bank in the nation as a part of a volunteer leadership program. As director I also founded the Board of Liaisons which pushed for initiatives such as Students End Hunger: an event that ran food drives in over three dozen schools. </p>
+	<p>I believe that developers have a powerful ability to impact this world in a positive way. Building up society means a lot to me. In high school I was President of Earth Club and Director of the Houston Food Bank Student Heroes, but more importantly I was genuinely invested in this place we call home and the people that live here. I have helped coordinate over 3 dozen food drives throughout the Houston Area, volunteered around 700 hours in a variety of areas, and am the recipient of the Gold President's Volunteer Service Award.</p>
 	<p>Learn More About Me!</p>
 	</div>
 

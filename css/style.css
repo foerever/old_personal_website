@@ -1,0 +1,153 @@
+/*TYPWRITER EFFECT ANIMATION STARTS HERE*/
+
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
+html {
+  min-height: 100%;
+}
+body {
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: white;
+  font-family: Lato, sans-serif;  
+  background-color:black ;
+  overflow-x: hidden;
+}
+.line-1 {
+    position: relative;
+    top: 50%;  
+    width: 30px;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;	    
+	transform: translateY(-50%);  
+}
+
+.delay {
+	wait: 10.0s;
+}
+
+/* Animates Words */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 25em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/*NAVIGATION BAR*/
+.navbar {
+	font-family: 'Fira-Mono', monospace;
+	margin-top: 0;
+	background-color: #000000;
+	border: 0;
+	font-size: 12px !important;
+	letter-spacing: 3px;
+	opacity: 0.5;
+	color: white;
+}
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+
+/*MAIN ELEMENTS*/
+p {
+	font: 'Fira-Mono', monospace;
+	font-size: 20px !important;
+	color:white;
+	letter-spacing: 2px;
+}
+em { 
+	font-size: 16px; 
+	color: grey;
+}
+h3, h4 {
+	font-size: 30px;
+	color: white;
+	letter-spacing: 5px;
+}
+
+/*CONTAINERS*/
+
+.initial_container {
+		background-image: 
+	linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),
+	url(http://i.imgur.com/TF0DtrZ.jpg);
+	background-size: cover;
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	z-index:1000;
+	padding: 500px 200px 400px 800px;
+	}
+.space_container {
+		padding: 450px 300px 400px 300px;
+	}
+.about_me_container {
+	padding: 80px 300px 380px 300px;
+}
+.project_container {
+	padding: 80px 300px 500px 300px;
+}
+
+/*EDITS*/
+.person {
+ 	border: 10px solid transparent;
+ 	margin-bottom: 25px;
+ 	width: 80%;
+ 	height: 80%;
+ 	opacity: 0.7;
+	}
+	.person:hover {
+	border-color: #f1f1f1;
+}	
+
+.make_circle{
+	width: 200px;
+	height: 200px;
+	background-size: cover;
+	display: inline-block;
+	border-radius: 200px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+.make_circle_smaller{
+	width: 200px;
+	height: 200px;
+	background-size: cover;
+	display: inline-block;
+	border-radius: 200px;
+	-webkit-border-radius
+}
+
+.test_border:hover {
+		border-color: red;
+	}
+.nicer_text {
+		font-family: 'Cormorant Garamond', serif; 
+	}
+.nicer_text h3 {
+		font-size: 40px;
+	}
+.nicer_text p {
+		font-size: 24px !important;
+	}
+.description_text {
+		font-size: 12px !important
+	}
+.top_div {
+		padding-bottom: 200px
+	}
